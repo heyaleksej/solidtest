@@ -1,0 +1,41 @@
+<div class="container p-0">
+  <div class="card-header row m-0 mb-3 mx-auto">
+    <div class="card p-3 w-100">
+      <h3 class="card-title text-center">Welcome</h3>
+      <p class="card-text text-center">With supporting text below as a natural lead-in to additional content</p>
+      <button class="btn btn-primary align-self-center">See all transactions</button>
+      <hr>
+      <p class="card-text text-center">You have {{transactions.total}} transactions</p>
+    </div>
+  </div>
+  <div class="card p-4">
+    <div class='row m-0 p-0'>
+      <div class="col-md ">
+        <app-single-block [operationFilter]="'income'"
+                          [name]="'Income'"
+                          [tabQuery]="0">
+        </app-single-block>
+      </div>
+      <div class="col-md">
+        <app-single-block [operationFilter]="'investment'"
+                          [name]="'Investment'"
+                          [tabQuery]="1">
+        </app-single-block>
+      </div>
+    </div>
+    <div class="row m-0 p-0  ">
+      <div class="col-md ">
+        <app-single-block [operationFilter]="'outcome'"
+                          [name]="'Outcome'"
+                          [tabQuery]="2">
+        </app-single-block>
+      </div>
+      <div class="col-md">
+        <app-single-block [operationFilter]="'loan'"
+                          [name]="'Loan'"
+                          [tabQuery]="3">
+        </app-single-block>
+      </div>
+    </div>
+  </div>
+</div>

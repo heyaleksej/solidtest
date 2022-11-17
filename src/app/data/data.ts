@@ -1,11 +1,11 @@
-export type TransactionType = 'income' | 'outcome' | 'loan' | 'investment';
+export type TransactionType = 'income' | 'outcome' | 'loan' | 'investment'| undefined;
 
 export interface Name {
   first: string;
   last: string;
 }
 
-export interface Transaction {
+export interface ITransaction {
   _id: string;
   amount: string;
   type: TransactionType;
@@ -16,11 +16,11 @@ export interface Transaction {
   address: string;
 }
 
-export interface TransactionsData {
+export interface ITransactionsData {
   total: number;
-  data: Transaction[];
+  data: ITransaction[];
 }
-export const store: TransactionsData = {
+export const store: ITransactionsData = {
   total: 100,
   data: [
     {
