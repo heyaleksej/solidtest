@@ -1,5 +1,8 @@
 {
   "name": "solidtest",
+  "engines": {
+    "node": "18.x"
+  },
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
