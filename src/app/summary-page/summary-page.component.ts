@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { ITransactionsData , store} from '../data/data';
+import { ITransactionsData , store} from '../local-data/data';
 
 @Component({
   selector: 'app-summary-page',

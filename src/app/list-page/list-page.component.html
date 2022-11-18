@@ -1,0 +1,23 @@
+<div class="container p-4 text-center">
+  <ul class="nav nav-tabs justify-content-center col-lg-6 p-0 mx-auto mb-3">
+    <app-single-tab [name]="'Income'" [tabQuery]="0"></app-single-tab>
+    <app-single-tab [name]="'Outcome'" [tabQuery]="1"></app-single-tab>
+    <app-single-tab [name]="'Loans'" [tabQuery]="2" ></app-single-tab>
+    <app-single-tab [name]="'Investments'" [tabQuery]="3"></app-single-tab>
+  </ul>
+  <table class="table col-lg-6 mx-auto mb-3" *ngIf="filteredTransactions.length">
+    <thead>
+    <tr>
+      <th class="card-text">Name</th>
+      <th class="card-text">Amount</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let transaction of filteredTransactions ">
+      <td class="text-center w-50">{{transaction.name.first + ' ' + transaction.name.last}}</td>
+      <td class="text-center"> {{transaction.amount.includes('floating') ? getAmount() : transaction.amount}}</td>
+    </tr>
+    </tbody>
+  </table>
+  <button routerLink="/" class="btn btn-primary">Go back</button>
+</div>

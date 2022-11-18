@@ -1,5 +1,5 @@
 import {Component, Input} from '@angular/core';
-import {ITransactionsData, store, TransactionType} from "../../../data/data";
+import {ITransactionsData, store, TransactionType} from "../../../local-data/data";
 
 @Component({
   selector: 'app-single-block',

@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import {ITransaction, TransactionType} from "./data/data";
+import {ITransaction, TransactionType} from "./local-data/data";
 
 
 @Pipe({
