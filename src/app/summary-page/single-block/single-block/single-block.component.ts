@@ -3,8 +3,7 @@ import {ITransactionsData, store, TransactionType} from "../../../local-data/dat
 
 @Component({
   selector: 'app-single-block',
-  templateUrl: './single-block.component.html',
-  styleUrls: ['./single-block.component.css']
+  templateUrl: './single-block.component.html'
 })
 
 
