@@ -12,7 +12,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint --fix",
-    "heroku-postbuild": "ng build — env=prod",
+    "heroku-postbuild": "ng build",
     "start" : "node server.js"
 
   },
